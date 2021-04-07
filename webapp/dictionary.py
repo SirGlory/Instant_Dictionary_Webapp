@@ -27,9 +27,6 @@ class Dictionary(page.Page):
                          "focus:outline-none focus:border-purple-500 py-2 px-4")
 
         input_box.on('input', cls.get_definition)
-        #jp.Button(a=input_div, text="Get Definition", classes="border-2 text-gray-500",  click=cls.get_definition,
-                  #outputdiv=output_div, inputbox=input_box)
-
 
         return wp
 

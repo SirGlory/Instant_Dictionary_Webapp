@@ -1,6 +1,5 @@
 import inspect
 import justpy as jp
-from definition import Definition
 from webapp import page
 from webapp.home import Home
 from webapp.about import About
@@ -14,12 +13,5 @@ for obj in imports:
             jp.Route(obj.path, obj.serve)
 
 
-#jp.Route(Home.path, Home.serve)
-#jp.Route(About.path, About.serve)
-#jp.Route(Dictionary.path, Dictionary.serve)
-
-#term = 'sun'
-#d = Definition(term=term)
-#print(d.get())
-
 jp.justpy(port=8001)
+
